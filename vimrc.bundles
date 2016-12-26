@@ -11,12 +11,11 @@ Bundle 'gmarik/vundle'
 
 " Define bundles via Github repos
 Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'slim-template/vim-slim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'vim-scripts/tComment'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'mustache/vim-mustache-handlebars'
+Bundle 'roryokane/detectindent'
 
 filetype on
