@@ -1,0 +1,11 @@
+[color]
+  ui = auto
+[core]
+  excludesfile = ~/.gitignore
+[grep]
+  lineNumber = true
+[user]
+  name = Brian O'Keefe
+  email = brian@bokstuff.com
+[alias]
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit

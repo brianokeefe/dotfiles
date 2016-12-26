@@ -1,0 +1,22 @@
+if &compatible
+  set nocompatible
+end
+
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" Define bundles via Github repos
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'slim-template/vim-slim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'vim-scripts/tComment'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'scrooloose/nerdtree'
+Bundle 'mustache/vim-mustache-handlebars'
+
+filetype on
