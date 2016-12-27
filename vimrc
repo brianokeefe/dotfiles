@@ -39,28 +39,28 @@ set number
 set numberwidth=5
 
 if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
+    source ~/.vimrc.bundles
 endif
 
 " DetectIndent settings
 augroup DetectIndent
-  autocmd!
-  autocmd BufReadPost * DetectIndent
+    autocmd!
+    autocmd BufReadPost * DetectIndent
 augroup END
 
 augroup vimrcEx
-  autocmd!
+    autocmd!
 
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it for commit messages, when the position is invalid, or when
-  " inside an event handler (happens when dropping a file on gvim).
-  autocmd BufReadPost *
-    \ if &ft != 'gitcommit' && line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
+    " When editing a file, always jump to the last known cursor position.
+    " Don't do it for commit messages, when the position is invalid, or when
+    " inside an event handler (happens when dropping a file on gvim).
+    autocmd BufReadPost *
+      \ if &ft != 'gitcommit' && line("'\"") > 0 && line("'\"") <= line("$") |
+      \   exe "normal g`\"" |
+      \ endif
 
-  " Set syntax highlighting for specific file types
-  autocmd BufRead,BufNewFile *.md set filetype=markdown
+    " Set syntax highlighting for specific file types
+    autocmd BufRead,BufNewFile *.md set filetype=markdown
 augroup END
 
 " Display extra whitespace
@@ -68,14 +68,14 @@ set list listchars=tab:»·,trail:·
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
-  " Use Ag over Grep
-  set grepprg=ag\ --nogroup\ --nocolor
+    " Use Ag over Grep
+    set grepprg=ag\ --nogroup\ --nocolor
 
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+    " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
-  " ag is fast enough that CtrlP doesn't need to cache
-  let g:ctrlp_use_caching = 0
+    " ag is fast enough that CtrlP doesn't need to cache
+    let g:ctrlp_use_caching = 0
 endif
 
 " Tab completion
