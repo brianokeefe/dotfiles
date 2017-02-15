@@ -30,8 +30,8 @@ set smartindent
 " Turn on syntax highlighting
 syntax on
 
-" Make it obvious where 80 characters is
-set textwidth=80
+" Make it obvious where 130 characters is
+set textwidth=130
 set colorcolumn=+1
 
 " Numbers
