@@ -104,3 +104,4 @@ nnoremap <leader><leader> <c-^>
 
 " Configure NERDTree
 noremap <Leader>p :NERDTree<CR>
+let g:NERDTreeNodeDelimiter = "\u00a0"
