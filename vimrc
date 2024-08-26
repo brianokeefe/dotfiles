@@ -5,8 +5,6 @@ set nocompatible
 " Leader
 let mapleader = " "
 
-xnoremap <C-\> gc
-
 set backspace=2   " Backspace deletes like most programs in insert mode
 set nobackup
 set nowritebackup
@@ -107,3 +105,6 @@ nnoremap <leader><leader> <c-^>
 " Configure NERDTree
 noremap <Leader>p :NERDTree<CR>
 let g:NERDTreeNodeDelimiter = "\u00a0"
+
+" Configure TComment
+nnoremap <C-/> :TComment<cr>
