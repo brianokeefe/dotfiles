@@ -107,4 +107,5 @@ noremap <Leader>p :NERDTree<CR>
 let g:NERDTreeNodeDelimiter = "\u00a0"
 
 " Configure TComment
-nnoremap <C-/> :TComment<cr>
+nnoremap <C-/> :TComment<CR>
+vnoremap <C-/> :TCommentBlock<CR>
